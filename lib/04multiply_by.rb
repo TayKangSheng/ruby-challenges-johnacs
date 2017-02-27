@@ -9,3 +9,9 @@
 # > 5
 # > 10
 # > 15
+
+def multiply_by(arr, num)
+  arr.map {|a| puts "> #{ a * num }" }
+end
+
+multiply_by([1, 2, 3], 5)

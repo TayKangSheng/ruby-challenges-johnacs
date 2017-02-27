@@ -9,3 +9,16 @@
 #
 # > 120
 #
+
+def factorial(n)
+  if n<= 1
+    1
+  else
+    n * factorial( n - 1 )
+  end
+
+# or below
+  # (1..n).inject(:*) || 1
+end
+
+puts factorial(5)
